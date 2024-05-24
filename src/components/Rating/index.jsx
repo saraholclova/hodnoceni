@@ -13,11 +13,11 @@ export const Rating = () => {
     <div className="rating">
       <div className="rating__value">{rating}</div>
       <div className="rating__stars">
-        <Star value={1} onSelect={klikNaHvezdu} />
-        <Star value={2} onSelect={klikNaHvezdu} />
-        <Star value={3} onSelect={klikNaHvezdu} />
-        <Star value={4} onSelect={klikNaHvezdu} />
-        <Star value={5} onSelect={klikNaHvezdu} />
+        <Star value={1} onSelect={klikNaHvezdu} glowing={rating >= 1} />
+        <Star value={2} onSelect={klikNaHvezdu} glowing={rating >= 2} />
+        <Star value={3} onSelect={klikNaHvezdu} glowing={rating >= 3} />
+        <Star value={4} onSelect={klikNaHvezdu} glowing={rating >= 4} />
+        <Star value={5} onSelect={klikNaHvezdu} glowing={rating >= 5} />
       </div>
     </div>
   );
